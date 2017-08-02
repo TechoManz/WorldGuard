@@ -1,0 +1,20 @@
+Hello. I have such a mistake. When I write the / rg info command, I write "You'rt not standing in any regions." Using the global region for this world instead. " And "Failed to fetch region information: WorldGuard: An unexpected error occurred! Please see the server console." Crash the code below
+[06:26:35] [pool-15-thread-2/WARN]: [WorldGuard] WorldGuard encountered an unexpected error
+java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;)V
+	at com.sk89q.worldguard.internal.guava.util.concurrent.Futures.getDone(Futures.java:1170) ~[worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.Futures$4.run(Futures.java:1121) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:435) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:900) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.complete(AbstractFuture.java:811) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.setException(AbstractFuture.java:675) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:124) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:435) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:900) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.complete(AbstractFuture.java:811) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.AbstractFuture.set(AbstractFuture.java:653) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) [worldguard-6.2.1.jar:?]
+	at com.sk89q.worldguard.internal.guava.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) [worldguard-6.2.1.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
